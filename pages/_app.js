@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/globals.css"
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import TidioChat from '../components/TidioChat';
 import { v4 as uuidv4 } from 'uuid';
-import "../styles/globals.css"
 import Head from 'next/head';
 // import '../styles/About.css';
 // import '../styles/Card.css';
