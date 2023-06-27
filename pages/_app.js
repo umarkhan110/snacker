@@ -1,5 +1,5 @@
+import '@/styles/globals.css'
 import React, { useState, useEffect } from 'react';
-import "../styles/globals.css"
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import Navbar from '../components/Navbar';
