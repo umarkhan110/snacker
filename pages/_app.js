@@ -6,16 +6,16 @@ import Footer from '../components/Footer';
 import TidioChat from '../components/TidioChat';
 import { v4 as uuidv4 } from 'uuid';
 import Head from 'next/head';
-import '../styles/About.css';
-import '../styles/Card.css';
-import '../styles/Footer.css';
-import '../styles/Home.css';
-import '../styles/HomeCards.css';
-import '../styles/HomeSlider.css';
-import '../styles/Navbar.css';
-import '../styles/RequestForm.css';
-import '../styles/SpeakerProfile.css';
-import '../styles/Speakers.css';
+// import '../styles/About.css';
+// import '../styles/Card.css';
+// import '../styles/Footer.css';
+// import '../styles/Home.css';
+// import '../styles/HomeCards.css';
+// import '../styles/HomeSlider.css';
+// import '../styles/Navbar.css';
+// import '../styles/RequestForm.css';
+// import '../styles/SpeakerProfile.css';
+// import '../styles/Speakers.css';
 
 // 
 
@@ -34,8 +34,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      {/* {visitorId && <TidioChat tidioKey={tidioKey} visitor={visitor} />} */}
-      <Footer />
+
     </>
   );
 }
