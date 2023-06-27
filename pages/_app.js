@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import Navbar from '../components/Navbar';
@@ -20,26 +20,7 @@ import '../styles/Speakers.css';
 // 
 
 function MyApp({ Component, pageProps }) {
-  const [visitorId, setVisitorId] = useState(null);
-
-  useEffect(() => {
-    let visitorId = localStorage.getItem('visitorId');
-    if (!visitorId) {
-      visitorId = uuidv4();
-      localStorage.setItem('visitorId', visitorId);
-    }
-    setVisitorId(visitorId);
-  }, []);
-
-  // Tidio-nyckel och besökardata
-  const tidioKey = '3x3nqoesg5re64kbwcp6esvufvwasoqn';
-
-  const visitor = {
-    distinct_id: visitorId,
-    email: "", // visitor email
-    name: visitorId, // Visitor name
-    phone: "" //Visitor phone
-  };
+  
 
   return (
     <>
@@ -53,7 +34,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      {visitorId && <TidioChat tidioKey={tidioKey} visitor={visitor} />}
+      {/* {visitorId && <TidioChat tidioKey={tidioKey} visitor={visitor} />} */}
       <Footer />
     </>
   );

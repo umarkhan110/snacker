@@ -10,12 +10,12 @@ import HomeCards from '../components/HomeCards'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-        duration: 1000, // Animation duration in milliseconds
-        once: true, // Animate only once when the element is in the viewport
-    });
-}, []);
+//   useEffect(() => {
+//     AOS.init({
+//         duration: 1000, // Animation duration in milliseconds
+//         once: true, // Animate only once when the element is in the viewport
+//     });
+// }, []);
   return (
     <>
       
