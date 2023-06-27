@@ -17,13 +17,7 @@ import '../styles/RequestForm.css';
 import '../styles/SpeakerProfile.css';
 import '../styles/Speakers.css';
 
-export async function fetchSpeakers() {
-  const speakersCollectionRef = collection(db, 'speakers');
-  const speakerSnapshot = await getDocs(speakersCollectionRef);
-  const speakerList = speakerSnapshot.docs.map(doc => doc.data());
-  console.log("Fetched speakers:", speakerList);
-  return speakerList;
-}
+// 
 
 function MyApp({ Component, pageProps }) {
   const [visitorId, setVisitorId] = useState(null);
