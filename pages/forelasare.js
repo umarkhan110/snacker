@@ -3,17 +3,15 @@ import Card from '../components/Card';
 import { useRouter } from 'next/router';
 import { fetchSpeakers } from './_app';
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
     const speakers = await fetchSpeakers();
-    
-    const category = context.query.category || null;
 
     console.log('Speakers fetched in getServerSideProps:', speakers);
 
     return {
         props: {
             speakers,
-            category,
+            
         },
     };
 }
