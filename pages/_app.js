@@ -1,4 +1,4 @@
-import '../public/globals.css'
+import '../index.css'
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
